@@ -1,0 +1,30 @@
+.avg-calc {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .calc {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: crimson;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    color: #fff;
+    border: 1px solid crimson;
+    transition: all 0.3s ease;
+  }
+  .calc:hover {
+    background-color: #fff;
+    color: crimson;
+  }
+  
+  .avg-result{
+      position: absolute;
+      bottom: 12rem;
+      font-size: 1.5rem;
+  }
+  

@@ -1,0 +1,1 @@
+A function to calculate the average rating of a product
