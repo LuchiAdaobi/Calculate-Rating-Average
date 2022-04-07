@@ -72,12 +72,23 @@ const averageRatings = ratings.map((rating) => {
   }
 });
 
-const avg = averageRatings;
-avg.forEach((item) => {
-  resultEl.innerHTML=`The average ratings are ${item}`;
+// store the ratings in the avgResult variable
+// const avgResult = averageRatings.map((rating) => {
+//   return {
+//     averageRatings
+//   }
+// });
+
+// for(let i = 0; i < avgResult.length; i++){
+//   resultEl.innerHTML+=`The average ratings is ${i} <br>`;
+// }
+const avgResult = averageRatings;
+
+avgResult.forEach((result) => {
+  resultEl.innerHTML+=`The average ratings is ${result}`;
 });
 
-console.log(avg[0].averageRating)
+console.log(avgResult[0].averageRating)
 }
 
 //   EVENT LISTEN
