@@ -82,10 +82,12 @@ const averageRatings = ratings.map((rating) => {
 // for(let i = 0; i < avgResult.length; i++){
 //   resultEl.innerHTML+=`The average ratings is ${i} <br>`;
 // }
-const avgResult = averageRatings;
+const avgResult = averageRatings.averageRating.map((rating) => {
+  rating.averageRating} 
+);
 
 avgResult.forEach((result) => {
-  resultEl.innerHTML+=`The average ratings is ${result}`;
+  resultEl.innerHTML+=`The average ratings is ${result} <br>`;
 });
 
 console.log(avgResult[0].averageRating)
