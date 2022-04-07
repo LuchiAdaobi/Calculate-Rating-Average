@@ -72,21 +72,9 @@ const averageRatings = ratings.map((rating) => {
   }
 });
 
-// store the ratings in the avgResult variable
-// const avgResult = averageRatings.map((rating) => {
-//   return {
-//     averageRatings
-//   }
-// });
-
-// for(let i = 0; i < avgResult.length; i++){
-//   resultEl.innerHTML+=`The average ratings is ${i} <br>`;
-// }
-const avgResult = averageRatings.averageRating.map((rating) => {
-  rating.averageRating} 
-);
-
+const avgResult = averageRatings;
 avgResult.forEach((result) => {
+  result = avgResult.averageRating;
   resultEl.innerHTML+=`The average ratings is ${result} <br>`;
 });
 
