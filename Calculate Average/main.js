@@ -134,3 +134,41 @@ calcBtn.addEventListener('click', displayAverageRatingResult());
 // ]
 
 
+// Change this 
+// ['one', 'two', 'three']
+
+// To this 
+// {
+// 'one': 'one',
+// 'two': 'two',
+// 'three': 'three'
+// }
+// Using reduce
+
+const nums = ['one', 'two', 'three'];
+
+// function reducer(acc, cur){
+//   return {
+//     acc, cur
+//   };
+// }
+
+// const num = nums.reduce(reducer, {});
+// const num = nums.reduce((acc, cur) => (
+//   {
+//      cur, acc
+//   }
+// ), {})
+
+const num = nums.reduce((acc, cur) => ({
+  ...acc, [cur]: cur
+}), {})
+console.log(num)
+
+const no = nums.reduce((acc, cur) => ({
+  ...acc, [cur]: cur
+}), {})
+
+console.log(no)
+
+
