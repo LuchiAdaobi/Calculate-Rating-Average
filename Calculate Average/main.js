@@ -160,15 +160,16 @@ const nums = ['one', 'two', 'three'];
 //   }
 // ), {})
 
-const num = nums.reduce((acc, cur) => ({
-  ...acc, [cur]: cur
-}), {})
-console.log(num)
+// const num = nums.reduce((acc, cur) => ({
+//   ...acc, [cur]: cur
+// }), {})
+// console.log(num)
 
-const no = nums.reduce((acc, cur) => ({
-  ...acc, [cur]: cur
-}), {})
+// const no = nums.reduce((acc, cur) => {
+//   acc[cur] = cur;
+//   return acc;
+// }, {})
 
-console.log(no)
+// console.log(no)
 
 
